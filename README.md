@@ -14,3 +14,8 @@ Já na fase 2 colocamos 3 fotos, repeti uma das fotos no carrosel, adicionei o d
 Na fase 3 mantive as imagens e mantive a maior parte dos ícones da página, adicionei o método acerca do cpf, porém como está sem banco de dados, ele só aparece mesmo na tela, e coloquei a opção de adicionar mais Uc's na página na qual eu fiz, foram diversos ajustes feitos até se chegar ao resultado.
 
 No geral da fase 2 para a fase 3 mudou só a questão do cpf e de adicionar uc's o restante continuou igual.
+
+# Observação importante:
+Na fase 2  eu coloquei um arquivo .css, mas não tinha necessidade, já que depois quando fiz diversas alterações em loco no notebook, vi que não precisava, porém deixei lá o commit no github, para ficar de exemplo de como tinha feito antes, mas toda a programação está feita dentro do index.html na fase 2.
+
+Assim na fase 3 após de já ter aprendido isso, nem fiz o arquivo.css,  como não usei fotos diferentes puxei todas da fase 2 para a fase 3 (as mesmas fotos), achei bobagem recopiar as fotos e recolocar dentro da pasta da Fase 3.
