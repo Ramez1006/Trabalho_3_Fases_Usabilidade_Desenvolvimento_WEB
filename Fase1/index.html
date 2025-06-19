@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for the photo gallery functionality */
+        .gallery-container {
+            position: relative;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+        .main-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .main-photo:hover {
+            transform: scale(1.02);
+        }
+        .thumbnail-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .thumbnail {
+            width: 30%;
+            cursor: pointer;
+            border-radius: 4px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        .thumbnail:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="resume-table">
+            <tr>
+                <td colspan="2" class="header">
+                    <h1>João da Silva</h1>
+                    <p class="subtitle">Desenvolvedor Web Full Stack</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="sidebar">
+                    <div class="gallery-container">
+                        <img id="mainPhoto" src="https://picsum.photos/300/300?random=1" alt="Foto de perfil principal" class="main-photo">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/300/300?random=1" alt="Foto 1" class="thumbnail" onclick="changePhoto(this)">
+                            <img src="https://picsum.photos/300/300?random=2" alt="Foto 2" class="thumbnail" onclick="changePhoto(this)">
+                            <img src="https://picsum.photos/300/300?random=3" alt="Foto 3" class="thumbnail" onclick="changePhoto(this)">
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Contato</h2>
+                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                        <p><i class="fas fa-envelope"></i> joao.silva@email.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/joaosilva</p>
+                        <p><i class="fab fa-github"></i> github.com/joaosilva</p>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Habilidades</h2>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>React.js</li>
+                            <li>Node.js</li>
+                            <li>Banco de Dados SQL</li>
+                            <li>Git e Versionamento</li>
+                        </ul>
+                    </div>
+                </td>
+                <td class="main-content">
+                    <section class="about">
+                        <h2>Sobre Mim</h2>
+                        <p>Desenvolvedor web com 5 anos de experiência em criação de aplicações modernas e responsivas. Apaixonado por resolver problemas complexos e criar experiências de usuário excepcionais.</p>
+                    </section>
+
+                    <section class="experience">
+                        <h2>Experiência Profissional</h2>
+                        <div class="job">
+                            <h3>Desenvolvedor Sênior - Tech Solutions</h3>
+                            <p class="date">2020 - Presente</p>
+                            
