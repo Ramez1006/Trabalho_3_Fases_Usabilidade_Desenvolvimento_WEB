@@ -3,92 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Profissional</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página de Perfil do Usuário</title>
     <style>
-        /* Inline styles for the photo gallery functionality */
-        .gallery-container {
-            position: relative;
-            max-width: 300px;
-            margin: 20px auto;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
         }
-        .main-photo {
-            width: 100%;
-            height: auto;
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .main-photo:hover {
-            transform: scale(1.02);
+        h1 {
+            text-align: center;
         }
-        .thumbnail-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
         }
-        .thumbnail {
-            width: 30%;
-            cursor: pointer;
-            border-radius: 4px;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-        }
-        .thumbnail:hover {
-            opacity: 1;
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <table class="resume-table">
-            <tr>
-                <td colspan="2" class="header">
-                    <h1>João da Silva</h1>
-                    <p class="subtitle">Desenvolvedor Web Full Stack</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="sidebar">
-                    <div class="gallery-container">
-                        <img id="mainPhoto" src="https://picsum.photos/300/300?random=1" alt="Foto de perfil principal" class="main-photo">
-                        <div class="thumbnail-container">
-                            <img src="https://picsum.photos/300/300?random=1" alt="Foto 1" class="thumbnail" onclick="changePhoto(this)">
-                            <img src="https://picsum.photos/300/300?random=2" alt="Foto 2" class="thumbnail" onclick="changePhoto(this)">
-                            <img src="https://picsum.photos/300/300?random=3" alt="Foto 3" class="thumbnail" onclick="changePhoto(this)">
-                        </div>
-                    </div>
+        <h1>Perfil de Usuário</h1>
+        
+        <img src="/Fase2/Imagens/IMG_20221012_224204.jpg" alt="Foto de Perfil" class="profile-pic">
+    
+        <p><strong>Nome Completo:</strong> Ramez Marques</p>
+        <p><strong>RA:</strong> 12419563</p>
+        <p><strong>Curso e Período Atual:</strong> Ciência da Computação - 3º Período</p>
+        <p><strong>Endereço Completo:</strong>  Bairro: Estoril, Cidade:Belo Horizonte, Estado: MG</p>
+        <p><strong>E-mail:</strong> raezmsl@gmail.com</p>
 
-                    <div class="contact-info">
-                        <h2>Contato</h2>
-                        <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
-                        <p><i class="fas fa-envelope"></i> joao.silva@email.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
-                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/joaosilva</p>
-                        <p><i class="fab fa-github"></i> github.com/joaosilva</p>
-                    </div>
+        <h2>UCs já Cursadas:</h2>
+        <ul>
+            <li>Modelagem de Software</li>
+            <li>Programação e Soluções Computacionais</li>
+            <li>Vida e Carreira</li>
+            <li>Ambientes Computacionais e Conectividade </li>
+            <li>Sistemas Computacionais e Segurança</li>
+        </ul>
 
-                    <div class="skills">
-                        <h2>Habilidades</h2>
-                        <ul>
-                            <li>HTML5 & CSS3</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Node.js</li>
-                            <li>Banco de Dados SQL</li>
-                            <li>Git e Versionamento</li>
-                        </ul>
-                    </div>
-                </td>
-                <td class="main-content">
-                    <section class="about">
-                        <h2>Sobre Mim</h2>
-                        <p>Desenvolvedor web com 5 anos de experiência em criação de aplicações modernas e responsivas. Apaixonado por resolver problemas complexos e criar experiências de usuário excepcionais.</p>
-                    </section>
+        <h2>Descrição Pessoal:</h2>
+        <p>Sou uma pessoa mais caseira, gosto muito de música e tocar meus instrumentos: contrabaixo e violão,adoro conversar e sempre aprender mais sobre algo, costumo fazer academia e ir ao clube</p>
 
-                    <section class="experience">
-                        <h2>Experiência Profissional</h2>
-                        <div class="job">
-                            <h3>Desenvolvedor Sênior - Tech Solutions</h3>
-                            <p class="date">2020 - Presente</p>
-                            
+        <h2>Descrição Profissional/Habilidades Técnicas:</h2>
+        
+        <h3>Experiência Profissional</h3>
+        <ul>
+            <li>Trabalho com servidor Windows Server 2012,2019,2022</li>
+            <li>Trabalho com servidor de emails</li>
+            <li>Trabalho com redes,configuração de equipamentos de segurança</li>
+        </ul>
+
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+            <li>Conhecimento Intermediário a avançado em Java</li>
+            <li>Conhecimento em HTML, CSS, JavaScript</li>
+            <li>Conhecimento Básico em SQL </li>
+            <li>Conhecimento Básico em Git</li>
+        <div class="social-links">
+            <h2>Redes Sociais:</h2>
+            <p>
+                <a href="https://www.linkedin.com/in/ramez-marques-370ab92b9" target="_blank">LinkedIn</a><br>
+                <a href="https://www.github.com/Ramez1006" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
